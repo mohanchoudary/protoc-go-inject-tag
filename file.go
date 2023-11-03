@@ -14,7 +14,7 @@ import (
 var (
 	rComment = regexp.MustCompile(`^//.*?@(?i:gotags?|inject_tags?):\s*(.*)$`)
 	rInject  = regexp.MustCompile("`.+`$")
-	rTags    = regexp.MustCompile(`[\w_]+:"[^"]+"`)
+	rTags    = regexp.MustCompile(`[\w_]+:".*"`)
 	rAll     = regexp.MustCompile(".*")
 )
 
